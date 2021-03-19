@@ -2315,7 +2315,7 @@ body > article {
 }
 
 #top .image {
-  border-radius: 100%;
+  border-radius: 50%;
   width: 20em;
   height: 15em;
   /* height: auto; */
@@ -2324,6 +2324,7 @@ body > article {
 
 #top .image img {
   border-radius: 100%;
+  /* border-radius: 50%; */
 }
 
 #top h1 {
