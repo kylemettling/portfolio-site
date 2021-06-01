@@ -2382,6 +2382,10 @@ body > article {
   color: #777;
 }
 
+.projectFlavor {
+  font-weight: 600;
+}
+
 /* Large */
 
 @media screen and (max-width: 1280px) {
