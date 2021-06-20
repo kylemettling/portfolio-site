@@ -346,7 +346,21 @@ footer > p {
   padding-bottom: 1.5rem;
 }
 /* Container */
-
+.resumeList {
+  list-style-type: circle;
+  text-align: left;
+}
+.resumeList > li {
+  font-size: 20px;
+  font-weight: 600;
+}
+/* .resumeDetails {
+  display: flex;
+  flex-direction: column;
+}
+.resumeItem {
+  display: flex;
+} */
 .container {
   margin: 0 auto;
   max-width: calc(100% - 50px);
@@ -402,6 +416,7 @@ footer > p {
 
 .row {
   display: flex;
+  /* flex-direction: row; */
   flex-wrap: wrap;
   box-sizing: border-box;
   align-items: stretch;
@@ -2605,7 +2620,7 @@ body > article {
   /* Nav */
 
   #nav {
-    height: 88px;
+    /* height: 88px; */
     line-height: 44px;
   }
 
