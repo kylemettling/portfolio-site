@@ -6,7 +6,48 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+:root {
+  /* Define Colors as colors */
+  --green: #00ebc7;
+  --red: #ff5470;
+  --yellow: #fde24f;
+  --black: #1b2d45;
+  --paleBlue: #4747a1;
+  --lightBlue: #43bff0;
+  --darkBlue: #00214d;
+  --darkerBlue: #130f21;
+  --darkGrey: #222;
+  --grey: #bfbfbf;
+  --medGrey: #b3b3b3;
+  --lightGrey: #f2f4f6;
+  --white: #fff;
 
+  /* Define Colors intentions */
+  --primary: var(--green);
+  --danger: var(--red);
+  --background: var(--paleBlue);
+  --textColor: var(--darkerBlue);
+  --buttonTextColor: var(--black);
+  --buttonColor: var(--primary);
+  --lineColor: var(--grey);
+  --cardBg: var(--medGrey);
+  --headerBackground: var(--darkBlue);
+  --footerBackground: var(--black);
+  --cardTextColor: var(--white);
+  --cursorOutlineColor: var(--green);
+  --chordOutlineColor: var(--green);
+
+  /* Elevation */
+  --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --level-5: 0 50px 35px -9px rgba(0, 0, 0, 0.1),
+    0 16px 15px -8px rgba(0, 0, 0, 0.04);
+}
 html,
 body,
 div,
@@ -112,6 +153,7 @@ section {
 
 body {
   line-height: 1;
+  background-color: var(--lightBlue);
 }
 
 ol,
@@ -1867,7 +1909,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-  background-color: #43bff0;
+  background-color: var(--lightBlue);
   color: #fff !important;
 }
 
