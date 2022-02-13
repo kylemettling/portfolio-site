@@ -188,6 +188,14 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+/* strong:hover {
+	transform: scale(1.05);
+}
+strong {
+	display: block;
+	transition: transform 0.3s ease-in;
+	transition-timing-function: cubic-bezier(1, -0.32, 0.17, 2.13);
+} */
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -269,6 +277,7 @@ strong {
 	font-weight: 600;
 	color: #3e3e3e;
 	/* color: var(--mist); */
+
 	/* color: white; */
 }
 
@@ -292,7 +301,8 @@ sup {
 blockquote {
 	border-left: solid 0.75em #eee;
 	padding: 1em 0 1em 1.5em;
-	font-style: italic;
+	font-weight: bold;
+	/* font-style: italic; */
 }
 
 h1,
@@ -415,7 +425,6 @@ footer > p {
 	max-width: calc(100% - 50px);
 	width: 1400px;
 }
-
 .container.medium {
 	width: 900px;
 }
@@ -2137,6 +2146,10 @@ ul.actions li:first-child {
 	text-align: center;
 	padding: 3em;
 }
+.container img {
+}
+.box img {
+}
 .box:hover {
 	transform: scale(1.05);
 }
@@ -2144,6 +2157,10 @@ ul.actions li:first-child {
 	transition: transform 0.3s ease-in;
 	transition-timing-function: cubic-bezier(1, -0.32, 0.17, 2.13);
 	/* transition-timing-function: cubic-bezier(0.78, 0.01, 0.37, 1.15); */
+}
+
+.box p {
+	margin: 0;
 }
 
 .box > .image {
@@ -2175,12 +2192,16 @@ ul.actions li:first-child {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 1em;
 }
 .stats {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 2em;
+}
+.stats img {
+	height: 170px;
 }
 /* .githubStats div,
 .githubStats > *:first-child {
@@ -2514,7 +2535,6 @@ body > article {
 .projectFlavor {
 	font-weight: 600;
 }
-
 /* Large */
 
 @media screen and (max-width: 1280px) {
@@ -2534,16 +2554,14 @@ body > article {
 		margin: 0 0 4em 0;
 	}
 
-	.row strong:hover {
+	/* .row strong:hover {
 		transform: scale(1.05);
 	}
 
 	.row strong {
-		display: block;
 		transition: transform 0.3s ease-in;
-		transition-timing-function: cubic-bezier(1, -0.32, 0.17, 2.13);
-		/* transition-timing-function: cubic-bezier(0.78, 0.01, 0.37, 1.15); */
-	}
+		transition-timing-function: cubic-bezier(1, -0.32, 0.17, 2.13); 
+	} */
 	/* Wrappers */
 
 	.wrapper {
@@ -2579,6 +2597,9 @@ body > article {
 		padding: 5em 0;
 	}
 
+	.stats {
+		flex-direction: column;
+	}
 	#top .image {
 		margin: 0 auto 2em auto;
 	}
@@ -2620,7 +2641,9 @@ body > article {
 	header {
 		margin: 0 0 2em 0;
 	}
-
+	.stats {
+		flex-direction: column;
+	}
 	header > p {
 		font-size: 1.25em;
 	}
