@@ -528,7 +528,7 @@ footer > p {
 .projectList a.image img {
 	height: 250px;
 	object-fit: cover;
-	outline: 3px solid var(--green2);
+	outline: 3px solid var(--green);
 }
 .container.medium {
 	width: 900px;
