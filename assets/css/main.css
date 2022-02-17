@@ -32,7 +32,8 @@
   --huh: #f4df8b;
   --orange: #b43e17;
   --frost: #539cdd;
-  --frost: rgb(83, 156, 221);
+  /* --frost: rgb(83, 156, 221); */
+  --frostOff: #3c719e;
 
   /* test colors */
   --base: #4747a1;
@@ -451,6 +452,13 @@ header > p {
 
 .hundredDevs {
   color: red;
+}
+hr {
+  color: white;
+  border: 1px groove white;
+}
+#copyright li {
+  color: white;
 }
 
 footer {
@@ -1817,11 +1825,29 @@ footer > p {
   margin: 0;
   gap: 1.15rem;
 }
+.project .box {
+  /* flex-direction: row-reverse; */
+  /* align-content: space-around; */
+}
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects .project-detail p {
+  width: 400px;
+  margin: 1em 2em;
+}
 .project {
   margin: 0;
+  padding-bottom: 0;
 }
 .project p {
   width: auto;
+}
+.project .box {
+  padding-bottom: 1em;
 }
 .project-image img {
   aspect-ratio: 16 / 9;
@@ -2033,7 +2059,7 @@ button,
   /* text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5); */
   overflow: hidden;
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5),
-    inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+    inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75) !important;
   background-color: var(--buttonColor);
   /* background-color: var(--autumn); */
   padding: 1em 2.35em 1em 2.35em;
@@ -2151,7 +2177,7 @@ ul.social li a:before {
   -webkit-transition: background-color 0.1s ease-in-out;
   -ms-transition: background-color 0.1s ease-in-out;
   transition: background-color 0.1s ease-in-out;
-  background-color: var(--buttonColor) !important;
+  background-color: var(--frostOff) !important;
   border-radius: 6px;
   box-shadow: inset 0px 0px 0px 1px #282828,
     inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
@@ -2860,15 +2886,19 @@ body > article {
 }
 #contact input,
 #contact textarea {
-  background: var(--baseLight);
-  color: black;
+  background: var(--frostOff);
+  color: white;
 }
 #contact input[type="submit"] {
-  background: var(--buttonColor);
+  background: var(--frostOff);
   color: var(--buttonTextColor);
 }
+input::placeholder,
+textarea::placeholder {
+  color: white !important;
+}
 #contact input[type="reset"] {
-  background: var(--baseOffLight);
+  background: var(--frostOff);
 }
 #contact input[type="submit"]:hover {
   background: var(--buttonHoverColor);
