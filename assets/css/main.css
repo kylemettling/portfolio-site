@@ -441,7 +441,7 @@ table {
 }
 
 header {
-  margin: 0 0 3em 0;
+  margin: 0 0 1.5em 0;
 }
 
 header > p {
@@ -476,7 +476,10 @@ footer > p {
 }
 .container {
   margin: 0 auto;
-  /* width: 1500px; */
+  width: 100%;
+}
+.home .container {
+  width: 1500px;
 }
 .home {
   background-color: var(--baseDark);
@@ -485,10 +488,13 @@ footer > p {
   background-size: cover;
   background-position: 0% 0%;
   border-bottom: 5px solid var(--accentBorderColor);
+  /* align-items: center; */
 }
-.home .container .card {
+/* .home .container  */
+.card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   --alpha: 0.97;
   padding: 0.777rem 1rem;
   background: rgba(40, 46, 75, var(--alpha));
@@ -1809,28 +1815,22 @@ footer > p {
   /* gap: 1rem; */
   padding: 0;
   margin: 0;
-  gap: 1.5rem;
+  gap: 1.15rem;
 }
 .project {
-  margin: 0.5rem;
-  /* height: 450px; */
-  /* max-width: 650px; */
+  margin: 0;
 }
-.project-image {
-  /* max-height: 400px; */
-  /* width: 450px; */
+.project p {
+  width: auto;
 }
 .project-image img {
   aspect-ratio: 16 / 9;
   max-height: 350px;
   /* width: 450px; */
 }
-.projects > div:first-child {
-  /* flex: 1 1 auto; */
-}
 .projects > div:first-child img {
   aspect-ratio: auto;
-  max-height: 750px;
+  max-height: 550px;
 }
 /* Form */
 
@@ -2048,7 +2048,7 @@ button:hover,
 .button:hover {
   background-color: var(--buttonHoverColor);
   /* background-color: var(--lightBlue); */
-  color: #fff !important;
+  color: var(--buttonTextColor);
 }
 
 input[type="button"]:active,
@@ -2085,7 +2085,7 @@ input[type="reset"].alt:hover,
 button.alt:hover,
 .button.alt:hover {
   background-color: #4f4f4f;
-  color: #fff !important;
+  /* color: #fff !important; */
 }
 
 input[type="button"].alt:active,
@@ -2147,23 +2147,15 @@ ul.social li a {
 }
 
 ul.social li a:before {
-  background-image: url("images/bg.png"),
-    -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background-image: url("images/bg.png"),
-    -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background-image: url("images/bg.png"),
-    -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background-image: url("images/bg.png"),
-    linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   -moz-transition: background-color 0.1s ease-in-out;
   -webkit-transition: background-color 0.1s ease-in-out;
   -ms-transition: background-color 0.1s ease-in-out;
   transition: background-color 0.1s ease-in-out;
-  background-color: #444;
+  background-color: var(--buttonColor) !important;
   border-radius: 6px;
   box-shadow: inset 0px 0px 0px 1px #282828,
     inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
-  color: #2e2e2e !important;
+  color: var(--textColor);
   display: block;
   font-size: 26px;
   height: 48px;
@@ -2282,6 +2274,9 @@ ul.actions li:first-child {
   /* margin: 5rem; */
   border-radius: 3px;
 }
+#resume .box {
+  background: var(--baseOffOff);
+}
 .box h3 {
   color: var(--boxTextColor);
 }
@@ -2289,11 +2284,11 @@ ul.actions li:first-child {
 }
 .box img {
 }
-.box:hover {
-  transform: scale(1.05);
+.box img:hover {
+  transform: scale(1.03);
 }
-.box {
-  transition: transform 0.3s ease-in;
+.box img {
+  transition: transform 0.25s ease-in-out;
   transition-timing-function: cubic-bezier(1, -0.32, 0.17, 2.13);
   /* transition-timing-function: cubic-bezier(0.78, 0.01, 0.37, 1.15); */
 }
@@ -2464,6 +2459,14 @@ ul.actions li:first-child {
 #portfolio .flex img {
   /* --portfolioOutlineColor: white; */
   border-radius: 1px;
+}
+#resume {
+  background: var(--frost);
+  color: var(--black);
+  font-size: 1.25rem;
+}
+#resume h2 {
+  color: var(--baseOffOff);
 }
 /* .projectList a img {
   outline: 4px solid var(--portfolioOutlineColor);
@@ -2704,7 +2707,10 @@ body > article {
 #top p a {
   color: inherit;
 }
-
+#resume footer p {
+  font-size: 1.2em;
+  font-weight: 700;
+}
 #contact footer {
   font-size: 0.9em;
 }
@@ -2848,6 +2854,25 @@ body > article {
   }
 }
 
+#contact {
+  background: var(--baseOffOff);
+  color: var(--white);
+}
+#contact input,
+#contact textarea {
+  background: var(--baseLight);
+  color: black;
+}
+#contact input[type="submit"] {
+  background: var(--buttonColor);
+  color: var(--buttonTextColor);
+}
+#contact input[type="reset"] {
+  background: var(--baseOffLight);
+}
+#contact input[type="submit"]:hover {
+  background: var(--buttonHoverColor);
+}
 /* Medium */
 
 @media screen and (max-width: 980px) {
@@ -3114,4 +3139,9 @@ body > article {
 .testTheme {
   --background: var(--base);
   --textColor: var(--baseLight);
+}
+
+.about {
+  margin: 0;
+  padding: 1em;
 }

@@ -19,16 +19,16 @@
 
 <body>
 	<!-- Nav -->
-	<div class="nav-wrapper">
-		<nav id="nav" class="flex">
-			<ul class="container">
-				<li><a href="#top">About</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#resume">Resume</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</div>
+	<!-- <div class="nav-wrapper"> -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="#top">About</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- </div> -->
 
 	<!-- Home -->
 	<article id="top" class="home wrapper style1">
@@ -37,7 +37,7 @@
 				<div class="col-4 col-5-large col-12-medium">
 					<span class="image fit"><img src="images/me.jpg" alt="kyle" /></span>
 				</div>
-				<div class="col-8 col-7-large col-12-medium card">
+				<div class="col-8 col-7-large col-12-medium card about">
 					<header>
 						<h1>Hi. I'm <strong>Kyle Mettling</strong>.</h1>
 					</header>
@@ -143,6 +143,11 @@
 
 				<div class="project">
 					<article class="box">
+						<p>
+							Search for a U.S. city and receive current weather including
+							atmospheric conditions, high/low temps and wind speed and
+							direction.<br />
+						</p>
 						<div class="project-image">
 							<a href="https://weather-app-936b28.netlify.app/" class="image featured"><img
 									src="images/wonders-weather.png" alt="" /></a>
@@ -150,12 +155,7 @@
 						<h3>
 							<a href="https://weather-app-936b28.netlify.app/">Weather App</a>
 						</h3>
-						<p>
-							Search for a U.S. city and receive current weather including
-							atmospheric conditions, high/low temps and wind speed and
-							direction.<br />
 						<blockquote>React.js & OpenWeather API.</blockquote>
-						</p>
 					</article>
 				</div>
 				<div class="project">
@@ -198,7 +198,7 @@
 		</div>
 	</article>
 	<!-- Work -->
-	<article id="resume" class="wrapper style2">
+	<article id="resume" class="wrapper">
 		<div class="container">
 			<header>
 				<h2>Examine my past experience.</h2>
