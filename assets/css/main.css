@@ -489,10 +489,10 @@ footer > p {
 	/* background-blend-mode: overlay; */
 	/* background-size: cover; */
 	/* background-color: var(--headerBackground); */
-	background-image: url('/images/home-2.png');
+	background-image: url('/images/home-3.png');
 	background-blend-mode: hard-light;
 	background-size: cover;
-	background-position: 0% 7%;
+	background-position: 0% 0%;
 	border-bottom: 5px solid var(--accentBorderColor);
 	/* transition: background 0.3s ease-in-out; */
 }
@@ -1838,12 +1838,12 @@ footer > p {
 .flex img {
 }
 
-.topProject {
+.top-project {
 	/* flex-grow: 2; */
 	flex-basis: 100%;
 	max-width: 1000px;
 }
-.musicMatters {
+.music-matters {
 	height: 100% !important;
 }
 /* Form */
@@ -2358,7 +2358,7 @@ ul.actions li:first-child {
 	/* max-height: 400px; */
 	/* overflow: hidden; */
 }
-.githubStats {
+.github-stats {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -2374,8 +2374,8 @@ ul.actions li:first-child {
 .stats img {
 	height: 170px;
 }
-/* .githubStats div,
-.githubStats > *:first-child {
+/* .github-stats div,
+.github-stats > *:first-child {
 	align-self: center;
 } */
 /* Icons */
@@ -2578,7 +2578,7 @@ ul.actions li:first-child {
 	border-bottom: 5px solid var(--accentBorderColor);
 	text-align: center;
 	background-color: var(--darkGrey);
-	background-image: url('/images/nav.png');
+	background-image: url('/images/nav-1.png');
 	background-position: 25% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -2628,7 +2628,7 @@ ul.container {
 	background: #070b1c;
 }
 
-.navWrapper #nav:not(::before) {
+.nav-wrapper #nav:not(::before) {
 	opacity: 0;
 
 	position: absolute;
@@ -2643,10 +2643,10 @@ ul.container {
 	animation: comeIn 2s ease-in-out;
 	/* transform: translateY(-100px); */
 }
-.navWrapper::before {
+.nav-wrapper::before {
 	/* z-index: -1; */
 }
-.navWrapper::after {
+.nav-wrapper::after {
 	/* opacity: 1; */
 	/* opacity: 0; */
 	/* opacity: 75%; */
@@ -2666,7 +2666,7 @@ ul.container {
 		background-blend-mode: hard-light;
 	}
 }
-.navWrapper:hover {
+.nav-wrapper:hover {
 	opacity: 1;
 	/* position: absolute; */
 	background-color: var(--headerBackground);
@@ -2827,7 +2827,7 @@ body > article {
 	color: #777;
 }
 
-.projectFlavor {
+.project-flavor {
 	font-weight: 600;
 }
 /* Large */
