@@ -30,6 +30,8 @@
 	--green3: #327171;
 	--offOff: #b8dcff;
 	--huh: #f4df8b;
+	--orange: #b43e17;
+	--frost: #539cdd;
 
 	/* test colors */
 	--base: #4747a1;
@@ -51,7 +53,7 @@
 	--textColor: var(--white);
 	--buttonTextColor: var(--white);
 	--buttonColor: var(--baseDark);
-	--buttonHoverColor: var(--stone);
+	--buttonHoverColor: var(--orange);
 	--lineColor: var(--grey);
 	--cardBg: var(--medGrey);
 	--headerBackground: var(--stone);
@@ -59,13 +61,14 @@
 	--cardTextColor: var(--green);
 	--cursorOutlineColor: var(--green);
 	--chordOutlineColor: var(--green);
-	--strongTextColor: var(--stone);
+	--strongTextColor: var(--frost);
 	--headingTextColor: var(--white);
 	--boxBackground: var(--baseOffOff);
 	--boxTextColor: var(--baseLight);
 	--blockquoteColor: var(--green);
 	--portfolioOutlineColor: var(--base);
-	--blockquoteTextColor: var(--baseLight);
+	--blockquoteTextColor: var(--white);
+	--accentBorderColor: var(--frost);
 
 	/* Elevation */
 	--level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -344,7 +347,7 @@ blockquote {
 	/* position: relative; */
 
 	justify-content: center;
-	border-left: solid 0.75em var(--blockquoteColor);
+	border-left: solid 0.75em var(--accentBorderColor);
 	color: var(--blockquoteTextColor);
 	padding: 1em 2em 1em 1.5em;
 	margin-top: 1rem;
@@ -481,7 +484,6 @@ footer > p {
 	width: 1500px;
 }
 .home {
-	/* color: red; */
 	background-color: var(--baseDark);
 	/* background-image: url("/images/home-background.png");  */
 	/* background-blend-mode: overlay; */
@@ -491,6 +493,7 @@ footer > p {
 	background-blend-mode: hard-light;
 	background-size: cover;
 	background-position: 0% 7%;
+	border-bottom: 5px solid var(--accentBorderColor);
 	/* transition: background 0.3s ease-in-out; */
 }
 /* .home:hover {
@@ -509,7 +512,7 @@ footer > p {
 	/* color: rgb(40, 46, 75);  */
 	/* background: rgba(17, 23, 55, var(--alpha)); */
 	background: rgba(40, 46, 75, var(--alpha));
-	outline: 5px solid var(--background);
+	outline: 5px solid var(--accentBorderColor);
 	/* background: rgba(0, 0, 0, var(--alpha)); */
 	/* background: rgba(var(--baseDarkNums), var(--alpha)); */
 	box-shadow: var(--level-5) var(--level-4);
@@ -528,7 +531,7 @@ footer > p {
 .projectList a.image img {
 	height: 250px;
 	object-fit: cover;
-	outline: 3px solid var(--green);
+	outline: 3px solid var(--accentBorderColor);
 }
 .container.medium {
 	width: 900px;
@@ -1998,7 +2001,7 @@ article:last-child {
 	display: block;
 	width: 100%;
 	box-shadow: var(--level-4);
-	outline: 8px solid var(--background);
+	outline: 5px solid var(--accentBorderColor);
 }
 
 .image.fit {
@@ -2572,7 +2575,7 @@ ul.actions li:first-child {
 	/* transition: background-image 0.7s ease-in-out; */
 	box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05),
 		inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-	border-bottom: 5px solid var(--background);
+	border-bottom: 5px solid var(--accentBorderColor);
 	text-align: center;
 	background-color: var(--darkGrey);
 	background-image: url('/images/nav.png');
@@ -2618,7 +2621,7 @@ ul.container {
 	align-items: center;
 	width: 655px; /* width of the menu */
 	/* backdrop-filter: brightness(0%); */
-	border: 5px solid var(--background);
+	border: 5px solid var(--accentBorderColor);
 	border-top: none;
 	border-radius: 5px;
 	height: 100%;
