@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body >
+<body>
 	<!-- Nav -->
 	<div class="nav-wrapper">
 		<nav id="nav" class="flex">
@@ -62,7 +62,7 @@
 
 	<!-- Portfolio -->
 	<article id="portfolio" class="wrapper">
-		<div class="container projects">
+		<div class="container">
 			<header class="github-stats">
 				<div>
 					<h2>Browse my recent deliveries.</h2>
@@ -83,14 +83,16 @@
 					</a>
 				</div>
 			</header>
-			<div class="flex projectList">
-				<div class="top-project">
-					<article class="box style2">
-						<a href="https://github.com/kylemettling/music-matters" class="image featured"><img
-							class="music-matters"
-								src="images/music-matters.png" alt="" /></a>
-						<h3>
-							<a href="https://github.com/kylemettling/music-matters">Music Matters</a>
+			<div class="projects">
+				<div class="project">
+					<article class="box">
+						<div class="project-image">
+
+							<a href="https://github.com/kylemettling/music-matters" class="image featured"><img
+									class="music-matters" src="images/music-matters.png" alt="Music Matters" /></a>
+							<h3>
+								<a href="https://github.com/kylemettling/music-matters">Music Matters</a>
+						</div>
 						</h3>
 						<p>
 							Companion app for musicians. Find a song, use a suggested scale,
@@ -99,13 +101,21 @@
 						</p>
 					</article>
 				</div>
-				<div>
-					<article class="box style2 project secondProject">
-						<a href="https://github.com/kylemettling/baseballpitchguesser" class="image featured"><img
-								src="images/pic005.png" alt="" /></a>
+				<div class="project">
+					<article class="box">
+						<!-- <article class="box style2 project secondProject"> -->
+						<div class="project-image">
+
+							<a href="https://github.com/kylemettling/baseballpitchguesser" class="image featured"><img
+									src="images/pitch-guesser.png" alt="Baseball Pitch Guesser" /></a>
+						</div>
 						<h3>
 							<a href="https://github.com/kylemettling/baseballpitchguesser">Baseball Pitch Guesser</a>
 						</h3>
+						<!-- <div class="live-anim">
+							<i class="fas fa-play-circle"></i>
+							<span>Live</span>
+						</div> -->
 						<p>
 							You're placed into mind of the pitcher on the mound. Are you both on the same
 							page? <br />
@@ -114,10 +124,12 @@
 						</p>
 					</article>
 				</div>
-				<div>
-					<article class="box project style2">
-						<a href="https://github.com/kylemettling/theNunGram" class="image featured"><img
-								src="images/pic05.jpg" alt="" /></a>
+				<div class="project">
+					<article class="box">
+						<div class="project-image">
+							<a href="https://github.com/kylemettling/theNunGram" class="image featured"><img
+									src="images/nungram.png" alt="NunGram" /></a>
+						</div>
 						<h3>
 							<a href="https://github.com/kylemettling/theNunGram">NunGram</a>
 						</h3>
@@ -129,10 +141,12 @@
 					</article>
 				</div>
 
-				<div>
-					<article class="box project style2">
-						<a href="https://weather-app-936b28.netlify.app/" class="image featured"><img
-								src="images/wonders-weather.png" alt="" /></a>
+				<div class="project">
+					<article class="box">
+						<div class="project-image">
+							<a href="https://weather-app-936b28.netlify.app/" class="image featured"><img
+									src="images/wonders-weather.png" alt="" /></a>
+						</div>
 						<h3>
 							<a href="https://weather-app-936b28.netlify.app/">Weather App</a>
 						</h3>
@@ -144,10 +158,12 @@
 						</p>
 					</article>
 				</div>
-				<div>
-					<article class="box project style2">
-						<a href="https://tictactoe-f59831.netlify.app/" class="image featured"><img
-								src="images/tic-tac-toe.png" alt="" /></a>
+				<div class="project">
+					<article class="box">
+						<div class="project-image">
+							<a href="https://tictactoe-f59831.netlify.app/" class="image featured"><img
+									src="images/tic-tac-toe.png" alt="" /></a>
+						</div>
 						<h3>
 							<a href="https://tictactoe-f59831.netlify.app/">Tic-Tac-Toe</a>
 						</h3>
@@ -158,10 +174,12 @@
 						</p>
 					</article>
 				</div>
-				<div>
-					<article class="box project style2">
-						<a href="https://wonder-calc.netlify.app/" class="image featured"><img
-								src="images/wonder-calc.png" alt="" /></a>
+				<div class="project">
+					<article class="box">
+						<div class="project-image">
+							<a href="https://wonder-calc.netlify.app/" class="image featured"><img
+									src="images/wonder-calc.png" alt="" /></a>
+						</div>
 						<h3>
 							<a href="https://wonder-calc.netlify.app/">Calculated</a>
 						</h3>
@@ -353,7 +371,7 @@
 		</div>
 	</article>
 
-	<!-- Scripts --> 
+	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
