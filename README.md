@@ -1,11 +1,10 @@
-# Kyle Mettling
-## Software Engineer
+# Kyle Mettling | Software Engineer
 
 
 
 <!-- [Live](https://baseball-pitch-guesser.herokuapp.com/) on Heroku -->
 
-  ![alt tag](images/screen.png) 
+  [![alt tag](images/screen.png)](https://kylemettling.com/)
 
 ## How It's Made:
 
