@@ -488,6 +488,15 @@ footer > p {
 	font-size: 1rem;
 	padding-bottom: 1.5rem;
 }
+#top .flavor span {
+	color: var(--accentBorderColor);
+	font-size: x-large;
+	font-weight: bold;
+
+	/* transition: color 0.3s cubic-bezier(0.74, 2.19, 0.04, -1.93); */
+	/* transition: all 0.3s ease-in-out; */
+}
+
 /* Container */
 .resumeList {
 	list-style-type: circle;
@@ -2405,6 +2414,7 @@ ul.actions li:first-child {
 	justify-content: center;
 	align-items: center;
 	margin: 1em;
+	gap: 2rem;
 }
 .stats {
 	display: flex;
