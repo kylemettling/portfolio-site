@@ -1911,7 +1911,7 @@ footer > p {
 	/* width: 450px; */
 }
 .projects > div:first-child p {
-	width: initial;
+	width: 92ch;
 }
 .projects > div:first-child img {
 	aspect-ratio: auto;
@@ -2373,7 +2373,7 @@ ul.actions li:first-child {
 	transform: scale(1.03);
 }
 .box img {
-	transition: transform 0.25s ease-in-out;
+	transition: transform 0.444s ease-in-out;
 	transition-timing-function: cubic-bezier(1, -0.32, 0.17, 2.13);
 	/* transition-timing-function: cubic-bezier(0.78, 0.01, 0.37, 1.15); */
 }
