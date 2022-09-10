@@ -1934,7 +1934,7 @@ ul {
 	flex-direction: row;
 	padding: 0;
 	margin: 0;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	list-style-type: none;
 }
 .projectLinks a {
@@ -2769,16 +2769,16 @@ article.box:hover {
 	border-bottom: 5px solid var(--orange);
 	text-align: center;
 	background-color: var(--darkGrey);
-	background-image: url('/images/nav2.png');
-	background-position: 0% 38%;
+	background-image: url('/images/nav.png');
+	background-position: 0% 43%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-blend-mode: difference;
 	position: fixed;
 	/* left: 0; */
-
+	height: 65px;
 	top: 0;
-	/* margin: 0; */
+	/* margin: 0 auto; */
 	/* padding: 0; */
 	width: 100%;
 	/* position: absolute; */
@@ -2794,13 +2794,13 @@ article.box:hover {
 }
 #nav > ul {
 	/* left: 24px; */
-	top: 55px;
+	top: 60px;
 	/* left: 24px; */
 	position: relative;
 }
 ul.container {
 	display: flex;
-	width: 655px;
+	width: 450px;
 	/* width of the menu */
 	/* backdrop-filter: brightness(0%); */
 	/* border: 5px solid var(--accentBorderColor); */
@@ -2823,7 +2823,7 @@ ul.container:hover {
 	display: flex;
 	list-style: none;
 	padding-left: 0;
-	justify-content: space-around;
+	justify-content: space-between;
 	/* align-content: flex-end; */
 }
 
@@ -2852,8 +2852,8 @@ ul.container:hover {
 	background: var(--strongTextColor);
 	color: var(--black2);
 	/* text-shadow: var(--level-4); */
-	height: 40px;
-	padding: 15px;
+	height: 45px;
+	padding: 12px;
 	/* margin-bottom: 22px; */
 	align-items: center;
 	transition: all 0.1s ease-in-out;
@@ -2912,7 +2912,7 @@ body > article {
 #top {
 	padding: 10em 0 10em 0;
 	text-align: left;
-	height: 925px;
+	height: 918px;
 	cursor: default;
 }
 
@@ -3012,7 +3012,7 @@ body > article {
 		font-size: 11pt;
 	}
 	ul.container {
-		margin-top: 2.9rem;
+		/* margin-top: 2.9rem; */
 	}
 	header {
 		margin: 0 0 4em 0;
@@ -3128,7 +3128,10 @@ textarea::placeholder {
 		padding: 5em 0;
 	}
 	ul.container {
-		margin-top: 2.9rem;
+		/* margin-top: 2.9rem; */
+	}
+	#nav {
+		/* margin: 0 auto; */
 	}
 
 	.stats {
