@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700');
 @import url('fontawesome-all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
 /*
 	Miniport by HTML5 UP
 	html5up.net | @ajlkn
@@ -2106,7 +2107,9 @@ section,
 article {
 	/* margin-bottom: 3em; */
 }
-
+article p {
+	font-family: 'Lato', sans-serif;
+}
 section > :last-child,
 article > :last-child,
 section:last-child,
@@ -2471,7 +2474,8 @@ article.box:hover {
 	margin: 0 auto;
 }
 .resumeDetails {
-	font-family: 'Lato', sans-serif;
+	/* font-family: 'Lato', sans-serif; */
+	font-family: 'Red Hat Display', sans-serif;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
