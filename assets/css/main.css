@@ -521,14 +521,19 @@ ul {
 	padding: 5px;
 }
 #portfolio .container {
-	padding-top: 45px;
-	border-top: 5px solid var(--accentBorderColor);
+	/* padding-top: 45px; */
+	/* border-top: 5px solid var(--accentBorderColor); */
 	background-color: var(--green2);
 	/* margin: 0 auto; */
 	margin-top: 45px;
+	padding: 0 15%;
+	padding-top: 2%;
+	border-radius: 5px;
 }
 #portfolio.wrapper {
-	padding: 0 25px 0 0 !important;
+	/* padding: 0 25px 0 0 !important; */
+	padding: 0;
+	margin: 0 8%;
 }
 #resume.wrapper {
 	padding: 55px 0;
@@ -557,9 +562,10 @@ ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	--alpha: 0.97;
+	--alpha: 0.95;
 	padding: 0 1rem;
 	background: rgba(26, 27, 39, var(--alpha));
+	/* background-blend-mode: hue; */
 	outline: 5px solid var(--hoverAccentBorderColor);
 	box-shadow: var(--level-5) var(--level-4);
 	border-radius: var(--borderRadius);
@@ -603,27 +609,29 @@ ul {
 .about {
 	display: flex;
 	flex-direction: column;
-	margin-top: -58px;
-	margin-left: 22.75%;
-	gap: 18px;
+	/* margin-top: -10px; */
+	gap: 50px;
 	align-items: center;
 	/* width: 100%; */
 	/* margin-bottom: -150px; */
 }
 .container {
-	padding-top: 97px;
+	padding-top: 100px;
 	/* align-items: flex-end; */
 	/* width: 400px; */
 	margin: 0 auto;
 }
 
 .about .card {
+	margin-left: 449px;
 	display: flex;
 	justify-content: center;
-	max-width: 888px;
+	width: 888px;
 }
 .about .image {
-	margin-left: 25%;
+	margin-right: 18px;
+	/* margin-left: 24.6%;
+	align-self: flex-start; */
 }
 @media screen and (max-width: 1920px) {
 }
@@ -2112,7 +2120,7 @@ article:last-child {
 	/* position: relative; */
 }
 .image img {
-	display: flex;
+	/* display: flex; */
 	width: 100%;
 	box-shadow: var(--level-4);
 	/* outline: 5px solid var(--hoverAccentBorderColor); */
@@ -2834,7 +2842,7 @@ body > article {
 
 #top .image {
 	border-radius: 50%;
-	width: 400px;
+	width: 300px;
 }
 
 #top .image img {
@@ -2917,6 +2925,19 @@ body > article {
 		font-size: 11pt;
 	}
 
+	.about {
+		margin: 0;
+		margin-top: -65px;
+		/* align-content: space-around; */
+		gap: 50px;
+	}
+	.about .card {
+		margin: 0;
+	}
+	.container {
+		padding: 5%;
+	}
+
 	input,
 	textarea,
 	select {
@@ -2959,6 +2980,7 @@ body > article {
 		width: 24em;
 		height: 24em;
 		margin: 0;
+		/* margin-left: 18px; */
 	}
 }
 
@@ -3037,7 +3059,15 @@ textarea::placeholder {
 
 	#top {
 		text-align: center;
-		padding: 5em 0;
+		/* padding: 9em 0; */
+	}
+	.about .card {
+		margin: 0;
+		/* gap: 0; */
+		/* align-items: center; */
+	}
+	.card h1 {
+		margin: 0;
 	}
 	ul.container {
 		/* margin-top: 2.9rem; */
