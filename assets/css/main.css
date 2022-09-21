@@ -536,27 +536,34 @@ ul {
 	margin: 0 8%;
 }
 #resume.wrapper {
-	padding: 55px 0;
-}
-#resume .container p {
-	font-size: 1.2em;
-	font-weight: 600;
-}
-.resumeItem h3 {
 	padding: 0;
-	margin: 15px 0;
+	width: 1400px;
+	margin: 0 auto;
 }
+#resume span {
+	font-size: 1.2em;
+	line-height: 40px;
+	/* font-weight: 600; */
+}
+#resume h3 {
+	border-bottom: 5px solid var(--background);
+}
+/* .resumeItem h3 {
+  padding: 0;
+  margin: 15px 0;
+} */
 .home {
 	background-color: var(--black);
 	background-image: url('/images/home2.webp');
 	background-blend-mode: hard-light;
 	background-size: cover;
 	background-repeat: no-repeat;
-	/* background-position: 30% 0; */
+	background-position: 0% 55%;
 	border-bottom: 5px solid var(--hoverAccentBorderColor);
 	/* position: relative; */
 	/* width: 2560px; */
 	/* margin: 0 auto; */
+	/* height: 1050px; */
 }
 .card {
 	display: flex;
@@ -610,32 +617,52 @@ ul {
 	display: flex;
 	flex-direction: column;
 	/* margin-top: -10px; */
-	gap: 50px;
+	/* gap: 50px; */
 	align-items: center;
+	justify-content: space-evenly;
 	/* width: 100%; */
+	/* height: 1200px; */
 	/* margin-bottom: -150px; */
 }
-.container {
-	padding-top: 100px;
+.home .container {
+	display: flex;
+	justify-content: center;
+	/* align-content: center; */
+	/* gap: 200px; */
+	/* height: 100%; */
+	padding-top: 20px;
+	margin-left: 35.25%;
 	/* align-items: flex-end; */
 	/* width: 400px; */
-	margin: 0 auto;
+	/* margin: 0 auto; */
+	height: 1050px;
 }
 
 .about .card {
-	display: flex;
-	justify-content: center;
-	width: 888px;
-	margin-left: 35%;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* width: 888px; */
+	/* margin-left: 349px; */
+	min-width: 300px;
+	max-width: 900px;
 }
 .about .image {
-	margin-right: 18px;
+	/* margin-right: 18px; */
 	/* margin-left: 24.6%;
 	align-self: flex-start; */
 }
 @media screen and (max-width: 1920px) {
+	.home .container {
+		height: 950px;
+		margin-left: 50%;
+	}
+	.about {
+		/* gap: 0; */
+	}
 	.about .card {
-		margin-left: 449px;
+	}
+	.about .image {
+		/* align-self: center; */
 	}
 }
 /* @media screen and (max-width: 1680px) {
@@ -2433,15 +2460,10 @@ ul.actions li:first-child {
 	align-items: center;
 	justify-content: center;
 	background: var(--boxBackground);
-	/* background: var(--black); */
 	color: var(--projectTextColor);
-	/* box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15),
-		0px 2px 3px 0px rgba(0, 0, 0, 0.1); */
 	box-shadow: var(--level-5) var(--level-2);
 	text-align: center;
 	padding: 1.5em;
-	height: 650px;
-	/* margin: 5rem; */
 	border-radius: 3px;
 }
 .project .box {
@@ -2451,14 +2473,14 @@ ul.actions li:first-child {
 	color: var(--altTextColor);
 }
 .project .box div {
-	width: 900px;
-	display: flex;
-	flex-direction: column;
-	background-color: var(--green2);
-	padding: 15px;
+	/* width: 900px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--green2);
+  padding: 15px; */
 }
 .project .box div > * {
-	align-self: center;
+	/* align-self: center; */
 }
 article.box {
 	/* --frostOff: #b6b7c1; */
@@ -2475,16 +2497,40 @@ article.box:hover {
 	/* background: var(--boxBackground); */
 	/* background: var(--orange); */
 	color: var(--altTextColor);
-	width: 900px;
+	/* width: 950px; */
+	width: 600px;
 	font-weight: bold;
-	margin: 0 auto;
+	align-self: center;
+	/* margin: 0 auto; */
+}
+#resume .box div img {
+	max-width: 500px;
+}
+#resume .box div {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	width: 500px;
+	padding: 0;
 }
 .resumeDetails {
 	/* font-family: 'Lato', sans-serif; */
 	font-family: 'Red Hat Display', sans-serif;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* grid-template-columns: 1fr 1fr; */
+	/* flex-direction: column; */
 	gap: 30px;
+}
+/* #resume .resumeDetails .box:last-child {
+  display: flex;
+  justify-items: center;
+  color: pink;
+} */
+footer .button:hover {
+	background-color: var(--hoverAccentBorderColor);
 }
 .box h3 {
 	font-size: 32px;
@@ -2496,7 +2542,7 @@ article.box:hover {
 	/* transition-timing-function: cubic-bezier(0.78, 0.01, 0.37, 1.15); */
 }
 
-.box p {
+.box {
 	margin: 0;
 }
 
@@ -2844,7 +2890,8 @@ body > article {
 
 #top {
 	text-align: left;
-	height: 952px;
+	/* height: 1200px; */
+	/* height: 952px; */
 	cursor: default;
 }
 
