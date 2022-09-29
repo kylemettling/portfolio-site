@@ -609,7 +609,7 @@ ul {
 	/* text-align: center; */
 }
 .project:first-of-type .box .details p {
-	width: initial;
+	width: 120ch;
 	align-self: center;
 }
 .project:first-of-type {
@@ -3476,7 +3476,7 @@ textarea::placeholder {
 	#portfolio .container {
 		/* width: 100%; */
 		/* margin: 0 50px; */
-		padding: 0 50px;
+		padding: 125px;
 	}
 
 	.project:last-child {
