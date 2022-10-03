@@ -522,7 +522,7 @@ ul {
 }
 #portfolio.wrapper {
 	/* padding: 0; */
-	padding: 0 auto;
+	padding: 0;
 	/* padding-top: 20px; */
 	/* border-top: none; */
 	/* padding: 0 25px 0 0 !important; */
@@ -584,10 +584,15 @@ ul {
 .project {
 }
 .project .image {
-	max-height: 450px;
+	max-height: 333px;
 	/* display: flex; */
 }
-.project:first-of-type .image {
+.project .image img {
+	max-height: 333px;
+	/* display: flex; */
+}
+.project:first-of-type .image,
+.project:first-of-type .image img {
 	width: 1234px;
 	max-height: 100%;
 }
@@ -629,11 +634,11 @@ ul {
 	padding-top: 15px;
 }
 .project .box .details p {
-	/* max-width: 60ch; */
+	max-width: 60ch;
 	align-self: center;
 }
 .project:first-of-type .details p {
-	/* max-width: 100ch; */
+	max-width: 111ch;
 	align-self: center;
 }
 
@@ -3488,6 +3493,12 @@ textarea::placeholder {
 	#portfolio.wrapper {
 		padding: 75px;
 	}
+	.project .box .details p {
+		width: 50ch;
+	}
+	.project:first-of-type .box .details p {
+		width: 90ch;
+	}
 	.project {
 	}
 	.project img {
@@ -3495,8 +3506,7 @@ textarea::placeholder {
 		width: auto;
 	}
 	.project:first-of-type img {
-		height: 400px;
-		width: auto;
+		height: 100%;
 	}
 	.project blockquote {
 		display: flex;
